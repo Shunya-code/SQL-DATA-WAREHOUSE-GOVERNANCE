@@ -19,6 +19,45 @@ these insights empower stakeholders with key business metrics,enabling startegic
 
 ----------
 
+## Data Rchitecture 
+  The Data architecture for this project follows Medallion Architecture bronze,Silver,Gold Layers
+
+  
+
+
+1.Bronze Layer Stores raw data as-is from the source systems.Data is ingested from CSV Files into Sql Server Database.
+2.Silver Layer:This Layer includes data cleaning,standardization and normalization processes to prepare data fro analysis.
+3.Gold Layer :Houses business-ready data modeled into star schema required for reporting and analysitcs.
+
+----------
+## Repository Structure 
+
+- data-warehouse-project/
+  - datasets/ # Raw datasets used for the project (ERP and CRM data)
+
+  - docs/ # Project documentation and architecture details
+    - etl.drawio # Draw.io file shows all different techniques and methods of E
+    - data_architecture.drawio # Draw.io file shows the project's architecture
+    - data_catalog.md  #Catalog of Datasets,including field descriptions and metadata
+    - data_flow.drawio #Draw.io file for data models (star schema)
+    - naming-conventions.md # Consistent naimg guidelines for tables,columns and files
+  
+  -scripts/ #SQL scripts for ETL and transformations
+    - bronze / #scriptas for extracting and loading raw data 
+    - silver/ #scripts for cleaning and transforming data
+    - gold/ #scriptas for creating analystical models 
+
+  - tests/ # Test scripts and quality files
+
+  -READme.md # Project overview and instructions
+
+  -LICENSE #Lincensce Information for the repsoitory
+
+  -.gitmore #Files and directories to be ignored by git  
+
+  -requirments.txt #Dependencies and requiments for the project    
+
+
 
 ## Licesnse :
   I dont consent for anyone to use this without looping me into it , i gnuinley need to improve this idea making governance better
