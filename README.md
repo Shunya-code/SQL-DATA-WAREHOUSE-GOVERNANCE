@@ -19,15 +19,17 @@ these insights empower stakeholders with key business metrics,enabling startegic
 
 ----------
 
-## Data Rchitecture 
-  The Data architecture for this project follows Medallion Architecture bronze,Silver,Gold Layers
-
+## Data Architecture 
+  The Data architecture for this project follows  Medallion Architecture  bronze, Silver, Gold Layers
+ ![Architecture](DataGovernanace.png)
   
 
 
-1.Bronze Layer Stores raw data as-is from the source systems.Data is ingested from CSV Files into Sql Server Database.
-2.Silver Layer:This Layer includes data cleaning,standardization and normalization processes to prepare data fro analysis.
-3.Gold Layer :Houses business-ready data modeled into star schema required for reporting and analysitcs.
+ 1.Bronze Layer Stores raw data as-is from the source systems.Data is ingested from CSV Files into Sql Server Database.
+ 
+ 2.Silver Layer:This Layer includes data cleaning,standardization and normalization processes to prepare data for analysis.
+ 
+ 3.Gold Layer :Houses business-ready data modeled into star schema required for reporting and analysitcs.
 
 ----------
 ## Repository Structure 
