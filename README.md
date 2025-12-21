@@ -21,7 +21,7 @@ these insights empower stakeholders with key business metrics,enabling startegic
 
 ## Data Architecture 
   The Data architecture for this project follows  Medallion Architecture  bronze, Silver, Gold Layers
- ![Architecture](DataGovernanace.png)
+ ![Architecture](Documents/DataArchitecture.png)
   
 
 
